@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Book your Appointment</h1>
+<div mat-dialog-content>
+  <form [formGroup]="clientForm">
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" placeholder="" required>
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" placeholder="" type="email" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Phone</mat-label>
+      <input matInput formControlName="phone" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Appointment Date</mat-label>
+      <input matInput formControlName="appointment_date" placeholder="" required readonly>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Appointment Time</mat-label>
+      <input matInput formControlName="appointment_time" placeholder="" required readonly>
+    </mat-form-field>
+
+    <button mat-flat-button color="primary" (click)="confirm()" [disabled]="clientForm.invalid">Confirm</button>
+  
+  </form>
+</div>

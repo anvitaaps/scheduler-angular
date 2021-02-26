@@ -1,0 +1,51 @@
+.slot {
+    margin: 0.5rem;
+}
+.mat-form-field {
+    width: 100%;
+}
+
+.not-available-button {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+}
+
+.available-button {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+    box-shadow: none !important;
+}
+
+mat-card {
+    width: 60rem;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+section {
+    vertical-align: middle;
+    height: 100%;
+}
+
+.mat-table {
+    width: 100% !important;
+    margin-top: 1rem;
+}
+
+.container {
+    margin-top: 1rem;
+}
+
+.mat-tab-group {
+    height: 100% !important;
+}
+
+:host ::ng-deep .mat-tab-body-wrapper {
+    height: 100%;
+}
