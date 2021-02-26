@@ -80,10 +80,7 @@ export class AppComponent {
 
   //to get all appointments
   getBookedAppointments() {
-    let data = {
-      selectedDate: this.selectedDate
-    }
-    this.mainService.getAppointments(data).subscribe(res => {
+    this.mainService.getAppointments('').subscribe(res => {
       this.dataSource = res['data'];
       console.log('result from appointments: ', res, this.dataSource);
     })
